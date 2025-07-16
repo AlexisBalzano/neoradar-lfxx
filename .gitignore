@@ -2,3 +2,11 @@ airways.db
 .DS_Store
 logs/
 *.db
+*.sct
+*.sct2
+*.ese
+*.log
+ICAO_Aircraft.txt
+ICAO_Airlines.txt
+ICAO_Airports.txt
+dist/*

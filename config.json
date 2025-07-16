@@ -1,0 +1,10 @@
+{
+  "sectorFileFromGNG": true,
+  "publish": {
+    "bucketName": "neoradar",
+    "region": "eu-west-2",
+    "s3Path": "packages/lfxx",
+    "makePublic": true,
+    "baseUrl": "https://pkg.neoradar.app/lfxx"
+  }
+}
