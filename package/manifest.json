@@ -1,11 +1,11 @@
 {
   "$schema": "https://raw.githubusercontent.com/neoradar-project/schemas/refs/heads/main/package/manifest.schema.json",
-  "id": "LFXX_AIRAC_2413_1_V3_2413_1_V3",
-  "name": "LFXX_AIRAC_2413_1_V3",
-  "version": "2413_1_V3",
-  "description": "Combined LFXX data for AIRAC 2413 Rev 2",
+  "id": "LFXX",
+  "name": "LFXX",
+  "version": "2413_4",
+  "description": "Combined LFXX for all French FIRs",
   "namespace": "lfxx",
-  "createdAt": "2025-07-07T22:08:22.482Z",
+  "createdAt": "2025-07-26T12:22:36.962Z",
   "centerPoint": [
     847183.3480445864,
     -6195983.977450224
