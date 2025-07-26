@@ -2,19 +2,30 @@
   "name": "Paris APP Ouest Lie",
   "type": "profile",
   "updatedAt": "2025-07-07T22:08:06.184Z",
+  "radarData": {
+    "gndFilterStatus": false,
+    "upperFilterValue": 245,
+    "lowerFilterValue": -1000,
+    "speedVector": {
+      "value": 0,
+      "type": "MIN"
+    },
+    "transitionAltitude": 5000
+  },
+  "atmSystem": "cdg",
   "map": {
     "center": {
-      "x": 286221.89174039516,
-      "y": 6252273.619836313
+      "x": 281256.1196596765,
+      "y": -6276177.372399474
     },
-    "windowArea": {
-      "minX": -47028.14340001714,
-      "minY": 6077795.930685827,
-      "maxX": 619471.9268808074,
-      "maxY": 6430422.062491495
-    },
-    "zoom": 7,
+    "zoom": 0.001841787109104489,
     "orientation": 0,
+    "windowArea": {
+      "minX": -413721.0542344114,
+      "minY": 6654071.210704383,
+      "maxX": 976233.2935537645,
+      "maxY": 5898283.534094563
+    },
     "items": [
       {
         "showLabel": false,
@@ -26,228 +37,183 @@
       },
       {
         "showLabel": false,
-        "uuid": "fix-adada",
-        "pointType": "icon+text"
+        "uuid": "fix-adada"
       },
       {
         "showLabel": false,
-        "uuid": "fix-agopa",
-        "pointType": "icon+text"
+        "uuid": "fix-agopa"
       },
       {
         "showLabel": false,
-        "uuid": "fix-alimo",
-        "pointType": "icon+text"
+        "uuid": "fix-alimo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-atrex",
-        "pointType": "icon+text"
+        "uuid": "fix-atrex"
       },
       {
         "showLabel": false,
-        "uuid": "fix-banox",
-        "pointType": "icon+text"
+        "uuid": "fix-banox"
       },
       {
         "showLabel": false,
-        "uuid": "fix-batag",
-        "pointType": "icon+text"
+        "uuid": "fix-batag"
       },
       {
         "showLabel": false,
-        "uuid": "fix-bavol",
-        "pointType": "icon+text"
+        "uuid": "fix-bavol"
       },
       {
         "showLabel": false,
-        "uuid": "fix-baxir",
-        "pointType": "icon+text"
+        "uuid": "fix-baxir"
       },
       {
         "showLabel": false,
-        "uuid": "fix-bekos",
-        "pointType": "icon+text"
+        "uuid": "fix-bekos"
       },
       {
         "showLabel": false,
-        "uuid": "fix-bubli",
-        "pointType": "icon+text"
+        "uuid": "fix-bubli"
       },
       {
         "showLabel": false,
-        "uuid": "fix-creil",
-        "pointType": "icon+text"
+        "uuid": "fix-creil"
       },
       {
         "showLabel": false,
-        "uuid": "fix-devim",
-        "pointType": "icon+text"
+        "uuid": "fix-devim"
       },
       {
         "showLabel": false,
-        "uuid": "fix-dikol",
-        "pointType": "icon+text"
+        "uuid": "fix-dikol"
       },
       {
         "showLabel": false,
-        "uuid": "fix-eboma",
-        "pointType": "icon+text"
+        "uuid": "fix-eboma"
       },
       {
         "showLabel": false,
-        "uuid": "fix-edoxa",
-        "pointType": "icon+text"
+        "uuid": "fix-edoxa"
       },
       {
         "showLabel": false,
-        "uuid": "fix-epuri",
-        "pointType": "icon+text"
+        "uuid": "fix-epuri"
       },
       {
         "showLabel": false,
-        "uuid": "fix-erixu",
-        "pointType": "icon+text"
+        "uuid": "fix-erixu"
       },
       {
         "showLabel": false,
-        "uuid": "fix-gilto",
-        "pointType": "icon+text"
+        "uuid": "fix-gilto"
       },
       {
         "showLabel": false,
-        "uuid": "fix-inkud",
-        "pointType": "icon+text"
+        "uuid": "fix-inkud"
       },
       {
         "showLabel": false,
-        "uuid": "fix-ipnob",
-        "pointType": "icon+text"
+        "uuid": "fix-ipnob"
       },
       {
         "showLabel": false,
-        "uuid": "fix-koliv",
-        "pointType": "icon+text"
+        "uuid": "fix-koliv"
       },
       {
         "showLabel": false,
-        "uuid": "fix-lalux",
-        "pointType": "icon+text"
+        "uuid": "fix-lalux"
       },
       {
         "showLabel": false,
-        "uuid": "fix-lanvi",
-        "pointType": "icon+text"
+        "uuid": "fix-lanvi"
       },
       {
         "showLabel": false,
-        "uuid": "fix-nerki",
-        "pointType": "icon+text"
+        "uuid": "fix-nerki"
       },
       {
         "showLabel": false,
-        "uuid": "fix-nipor",
-        "pointType": "icon+text"
+        "uuid": "fix-nipor"
       },
       {
         "showLabel": false,
-        "uuid": "fix-nurmo",
-        "pointType": "icon+text"
+        "uuid": "fix-nurmo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-obobi",
-        "pointType": "icon+text"
+        "uuid": "fix-obobi"
       },
       {
         "showLabel": false,
-        "uuid": "fix-odebu",
-        "pointType": "icon+text"
+        "uuid": "fix-odebu"
       },
       {
         "showLabel": false,
-        "uuid": "fix-odilo",
-        "pointType": "icon+text"
+        "uuid": "fix-odilo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-okabo",
-        "pointType": "icon+text"
+        "uuid": "fix-okabo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-okasi",
-        "pointType": "icon+text"
+        "uuid": "fix-okasi"
       },
       {
         "showLabel": false,
-        "uuid": "fix-okipa",
-        "pointType": "icon+text"
+        "uuid": "fix-okipa"
       },
       {
         "showLabel": false,
-        "uuid": "fix-opale",
-        "pointType": "icon+text"
+        "uuid": "fix-opale"
       },
       {
         "showLabel": false,
-        "uuid": "fix-pekim",
-        "pointType": "icon+text"
+        "uuid": "fix-pekim"
       },
       {
         "showLabel": false,
-        "uuid": "fix-pilul",
-        "pointType": "icon+text"
+        "uuid": "fix-pilul"
       },
       {
         "showLabel": false,
-        "uuid": "fix-piver",
-        "pointType": "icon+text"
+        "uuid": "fix-piver"
       },
       {
         "showLabel": false,
-        "uuid": "fix-pn619",
-        "pointType": "icon+text"
+        "uuid": "fix-pn619"
       },
       {
         "showLabel": false,
-        "uuid": "fix-po183",
-        "pointType": "icon+text"
+        "uuid": "fix-po183"
       },
       {
         "showLabel": false,
-        "uuid": "fix-ranux",
-        "pointType": "icon+text"
+        "uuid": "fix-ranux"
       },
       {
         "showLabel": false,
-        "uuid": "fix-sotip",
-        "pointType": "icon+text"
+        "uuid": "fix-sotip"
       },
       {
         "showLabel": false,
-        "uuid": "fix-urelo",
-        "pointType": "icon+text"
+        "uuid": "fix-urelo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-valpo",
-        "pointType": "icon+text"
+        "uuid": "fix-valpo"
       },
       {
         "showLabel": false,
-        "uuid": "fix-vasol",
-        "pointType": "icon+text"
+        "uuid": "fix-vasol"
       },
       {
         "showLabel": false,
-        "uuid": "fix-vebek",
-        "pointType": "icon+text"
+        "uuid": "fix-vebek"
       },
       {
         "showLabel": false,
-        "uuid": "fix-vemil",
-        "pointType": "icon+text"
+        "uuid": "fix-vemil"
       },
       {
         "showLabel": false,
@@ -299,18 +265,15 @@
       },
       {
         "showLabel": false,
-        "uuid": "ndb-cvt",
-        "pointType": "icon+text"
+        "uuid": "ndb-cvt"
       },
       {
         "showLabel": false,
-        "uuid": "ndb-hol",
-        "pointType": "icon+text"
+        "uuid": "ndb-hol"
       },
       {
         "showLabel": false,
-        "uuid": "ndb-vat",
-        "pointType": "icon+text"
+        "uuid": "ndb-vat"
       },
       {
         "showLabel": false,
@@ -382,84 +345,80 @@
       },
       {
         "showLabel": false,
-        "uuid": "vor-bov",
-        "pointType": "icon+text"
+        "uuid": "vor-bov"
       },
       {
         "showLabel": false,
-        "uuid": "vor-bry",
-        "pointType": "icon+text"
+        "uuid": "vor-bry"
       },
       {
         "showLabel": false,
-        "uuid": "vor-cad",
-        "pointType": "icon+text"
+        "uuid": "vor-cad"
       },
       {
         "showLabel": false,
-        "uuid": "vor-cav",
-        "pointType": "icon+text"
+        "uuid": "vor-cav"
       },
       {
         "showLabel": false,
-        "uuid": "vor-clm",
-        "pointType": "icon+text"
+        "uuid": "vor-clm"
       },
       {
         "showLabel": false,
-        "uuid": "vor-ctl",
-        "pointType": "icon+text"
+        "uuid": "vor-ctl"
       },
       {
         "showLabel": false,
-        "uuid": "vor-epr",
-        "pointType": "icon+text"
+        "uuid": "vor-epr"
       },
       {
         "showLabel": false,
-        "uuid": "vor-evx",
-        "pointType": "icon+text"
+        "uuid": "vor-evx"
       },
       {
         "showLabel": false,
-        "uuid": "vor-lgl",
-        "pointType": "icon+text"
+        "uuid": "vor-lgl"
       },
       {
         "showLabel": false,
-        "uuid": "vor-mln",
-        "pointType": "icon+text"
+        "uuid": "vor-mln"
       },
       {
         "showLabel": false,
-        "uuid": "vor-mtd",
-        "pointType": "icon+text"
+        "uuid": "vor-mtd"
       },
       {
         "showLabel": false,
-        "uuid": "vor-pon",
-        "pointType": "icon+text"
+        "uuid": "vor-pon"
       },
       {
         "showLabel": false,
-        "uuid": "vor-ptv",
-        "pointType": "icon+text"
+        "uuid": "vor-ptv"
       },
       {
         "showLabel": false,
-        "uuid": "vor-rbt",
-        "pointType": "icon+text"
+        "uuid": "vor-rbt"
       },
       {
         "showLabel": false,
-        "uuid": "vor-tro",
-        "pointType": "icon+text"
+        "uuid": "vor-tro"
       },
       {
         "showLabel": false,
-        "uuid": "vor-tsu",
-        "pointType": "icon+text"
+        "uuid": "vor-tsu"
+      },
+      {
+        "showLabel": false,
+        "uuid": "runway-lfob-04-22"
+      },
+      {
+        "showLabel": false,
+        "uuid": "runway-lfob-12-30"
+      },
+      {
+        "showLabel": false,
+        "uuid": "fix-lorni"
       }
     ]
-  }
+  },
 }
