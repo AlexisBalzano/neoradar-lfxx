@@ -2,6 +2,17 @@
   "name": "Paris APP Est Lie",
   "type": "profile",
   "updatedAt": "2025-07-07T22:08:06.183Z",
+  "radarData": {
+    "gndFilterStatus": false,
+    "upperFilterValue": 245,
+    "lowerFilterValue": -1000,
+    "speedVector": {
+      "value": 0,
+      "type": "MIN"
+    },
+    "transitionAltitude": 5000
+  },
+  "atmSystem": "cdg",
   "map": {
     "center": {
       "x": 262779.73243143904,

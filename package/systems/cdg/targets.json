@@ -1,37 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/neoradar-project/schemas/refs/heads/main/systems/targets.schema.json",
-  "groundSymbology": {
-    "default": [
-      {
-        "plotImage": "plots/cdg/blanc/t2",
-        "historyTrailImages": [
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5"
-        ]
-      }
-    ],
-    "departure": [
-      {
-        "plotImage": "plots/cdg/blanc/t2",
-        "historyTrailImages": [
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5"
-        ]
-      }
-    ],
-    "arrival": [
-      {
-        "plotImage": "plots/cdg/blanc/t2",
-        "historyTrailImages": [
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5",
-          "plots/cdg/blanc/t5"
-        ]
-      }
-    ]
-  },
+  "groundSymbology": "#default",
   "airborneSymbology": [
     {
       "description": "issy helico avec code 4217",

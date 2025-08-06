@@ -4,6 +4,12 @@
     "default": [
       {
         "plotImage": "plots/cdg/blanc/t2",
+        "primaryPlotColor": [255, 242, 73],
+        "primaryHistoryTrailColor":[
+          [0, 255, 255],
+          [0, 219, 219],
+          [0, 183, 183]
+        ],
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
@@ -14,6 +20,12 @@
     "departure": [
       {
         "plotImage": "plots/cdg/blanc/t2",
+        "primaryPlotColor": [240, 208, 48],
+                "primaryHistoryTrailColor":[
+          [0, 255, 255],
+          [0, 219, 219],
+          [0, 183, 183]
+        ],
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
@@ -24,6 +36,12 @@
     "arrival": [
       {
         "plotImage": "plots/cdg/blanc/t2",
+        "primaryPlotColor": [240, 208, 48],
+                "primaryHistoryTrailColor":[
+          [0, 255, 255],
+          [0, 219, 219],
+          [0, 183, 183]
+        ],
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
