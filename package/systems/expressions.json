@@ -5,6 +5,52 @@
     "incorrectSquawkRedColor": { "value": "239, 20, 72", "expression": ["$incorrectSquawk"] },
     "emptyIfNoAssignedSquawk":  {"value": "", "expression": ["$noAssignedSquawk"] },
 
+    "pdcRequestedTextBlinkColour": {
+      "value": "255, 255, 255",
+      "expression": [
+        "$hasRejectedAcknowledgmentState",
+        "$isPDCRequestedState",
+        "$hasReceivedMessageState"
+      ]
+    },
+    "pdcRequestedColour": {
+      "value": "255, 255, 0",
+      "expression": [
+        "$isPDCRequestedState"
+      ]
+    },
+    "receivedMessageColour": {
+      "value": "255, 255, 0",
+      "expression": [
+        "$hasReceivedMessageState"
+      ]
+    },
+    "rejectedColour": {
+      "value": "255, 0, 0",
+      "expression": [
+        "$hasRejectedAcknowledgmentState"
+      ]
+    },
+    "acknowledgmentColour": {
+      "value": "0, 176, 0",
+      "expression": [
+        "$hasAcknowledgmentState"
+      ]
+    },
+    "sentMessageColour": {
+      "value": "255, 255, 0",
+      "expression": [
+        "$hasSentMessageState"
+      ]
+    },
+    "defaultDatalinkColour": {
+      "value": "130, 130, 130",
+      "expression": [
+        "$isDefaultDatalinkState"
+      ]
+    },  
+
+    "emptySIDifNotDep": { "value": "", "expression": ["$isNotDep"]},
     "suggestedSidIfNoAssigned": { "value": "&suggestedSid", "expression": ["$isAssignedSidEmpty"] },
     "suggestedDepRunwayIfNoAssigned": {
       "value": "&suggestedDepRunway",
@@ -58,8 +104,23 @@
     "assumedAndcdgSud": { "value": "227,157,157", "expression": ["$assumedAndIsLFPGSouthArrival"] },
     "assumedAndcdgBourget": { "value": "211,150,227", "expression": ["$assumedAndIsBourgetArrival"] },
     "assumedAndcdgOrange": { "value": "227,177,124", "expression": ["$assumedAndIsOrlyArrival", "$assumedAndIsArr"] },
-    "assumedAndcdgDepBleu": { "value": "161,227,227", "expression": ["$assumedAndIsCDGOrPBDeparture"] },
+    "assumedAndcdgDepBleu": { "value": "124, 176, 176", "expression": ["$assumedAndIsCDGOrPBDeparture"] },
     "assumedAndcdgDepSat": { "value": "101,192,223", "expression": ["$assumedAndisParisGroupDeparture", "$assumedAndIsBeauvaisDeparture", "$assumedAndIsDep"] },
+
+    "assumedAndArrival": { "value": "77, 148, 172", "expression": ["$assumedAndIsArr"] },
+    "assumedAndDeparture": { "value": "157, 89, 90", "expression": ["$assumedAndIsDep"] },
+
+    "assumedNCEDeparture": { "value": "213, 151, 163", "expression": ["$isAssumedLFMNDeparture"] },
+    "assumedNCEArrival": { "value": "164, 204, 145", "expression": ["$isAssumedLFMNArrival"] },
+    "assumedSATDeparture": { "value": "162, 114, 123", "expression": ["$isAssumedNCEsatelliteDeparture"] },
+    "assumedSATArrival": { "value": "147, 204, 52", "expression": ["$isAssumedNCEsatelliteArrival"] },
+    "assumedTransitIFR": { "value": "152, 170, 30", "expression": ["$isAssumedTransitIFR"] },
+    "assumedTransitVFR": { "value": "164, 178, 105", "expression": ["$isAssumedTransitVFR"] },
+    "assumedVFRandArrival": { "value": "185, 178, 138", "expression": ["$isAssumedVFR"] },
+    "assumedEmmergency": { "value": "255,0,0", "expression": ["$isAssumedAndEmergency"] },
+
+
+
 
     "greenIncomingTransfer": { "value": "36,114,41", "expression": ["$isInboundTransfer"] },
     "greenOutgoingTransfer": { "value": "110,204,116", "expression": ["$isOutboundTransfer"] },
@@ -70,20 +131,150 @@
       "expression": ["$scratchPathNotEmpty"]
     },
 
+
     "altitudeBelowTAPrefix": { "value": "A", "expression": ["$isBelowTransitionAltitude"] },
+    "altitudeBelowTASuffix": { "value": "00", "expression": ["$isBelowTransitionAltitude"] },
     "altitudeBelowTATruncate": { "value": "1,3", "expression": ["$isBelowTransitionAltitude"] },
     "altitudeAboveTATruncate": { "value": "0,3", "expression": ["$isAboveTransitionAltitude"] },
+
+    "truncateSlowDescending": {"value": "0, 2", "expression": ["$isSlowDescending"]},
+    "truncateSlowClimbing": {"value": "0, 1", "expression": ["$isSlowClimbing"]},
+    "truncateFastDescending": {"value": "0, 3", "expression": ["$isNotSlowDescending"]},
+    "truncateFastClimbing": {"value": "0, 2", "expression": ["$isNotSlowClimbing"]},
 
     "assumedPrefix": { "value": "[", "expression": ["$isAssumed"] },
     "assumedSuffix": { "value": "]", "expression": ["$isAssumed"] }
   },
-  "expressions": {
+"expressions": {
     "alwaysTrue": ["notEmpty", "callsign"],
     "alwaysFalse": [
       "AND",
       [
         ["==", "isDeparture", "1"],
-        ["==", "isDeparture", "1"]
+        ["==", "isDeparture", "0"]
+      ]
+    ],
+"isEmergency": ["==", "squawk", "7700"],
+
+"isAssumedAndEmergency": [
+  "AND",
+  ["$isAssumed", "$isEmergency"]
+
+],
+
+"isPDCRequestedState": [
+      "==",
+      "isPDCRequested",
+      "1"
+    ],
+    "isPDCStandbyState": [
+      "==",
+      "isPDCStandby",
+      "1"
+    ],
+    "hasReceivedMessageState": [
+      "AND",
+      [
+        [
+          "==",
+          "isPDCRequested",
+          "0"
+        ],
+        [
+          "==",
+          "hasReceivedHoppieMessage",
+          "1"
+        ]
+      ]
+    ],
+    "hasRejectedAcknowledgmentState": [
+      "AND",
+      [
+        [
+          "==",
+          "isPDCRequested",
+          "0"
+        ],
+        [
+          "==",
+          "hasReceivedHoppieMessage",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCUnableAcknowledgment",
+          "1"
+        ]
+      ]
+    ],
+    "hasAcknowledgmentState": [
+      "AND",
+      [
+        [
+          "==",
+          "isPDCRequested",
+          "0"
+        ],
+        [
+          "==",
+          "hasReceivedHoppieMessage",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCAcknowledgment",
+          "1"
+        ]
+      ]
+    ],
+    "hasSentMessageState": [
+      "AND",
+      [
+        [
+          "==",
+          "isPDCRequested",
+          "0"
+        ],
+        [
+          "==",
+          "hasReceivedHoppieMessage",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCAcknowledgment",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCSentMessage",
+          "1"
+        ]
+      ]
+    ],
+    "isDefaultDatalinkState": [
+      "AND",
+      [
+        [
+          "==",
+          "isPDCRequested",
+          "0"
+        ],
+        [
+          "==",
+          "hasReceivedHoppieMessage",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCAcknowledgment",
+          "0"
+        ],
+        [
+          "==",
+          "hasCPDLCSentMessage",
+          "0"
+        ]
       ]
     ],
 
@@ -94,6 +285,20 @@
 
     "isDep": ["==", "isDeparture", "1"],
     "isArr": ["==", "isArrival", "1"],
+    "isNotDep": ["==", "isDeparture", "0"],
+    "isNotArr": ["==", "isArrival", "0"],
+
+    "isSlowDescending": ["AND", [[">", "verticalSpeed", "-1000"], ["<", "verticalSpeed", "0"]]],
+    "isSlowClimbing": ["AND", [["<", "verticalSpeed", "1000"], [">", "verticalSpeed", "0"]]],
+    "isNotSlowClimbing": [">=", "verticalSpeed", "1000"],
+    "isNotSlowDescending": ["<=", "verticalSpeed", "-1000"],
+    
+    "isVFR": ["contains", "flightRule", "V"],
+    "isIFR": ["contains", "flightRule", "I"],
+
+    "isVFRandDeparture": ["AND", [["==", "isDeparture", "1"], ["contains", "flightRule", "V"]]],
+    "isVFRandArrival": ["AND", [["==", "isArrival", "1"], ["contains", "flightRule", "V"]]], 
+
 
     "assumedAndIsArr": [
       "AND",
@@ -124,6 +329,7 @@
     "isAssignedStarNotEmpty": ["notEmpty", "star"],
     "hasAssignedSid": ["notEmpty", "sid"],
 
+    "isFlyingLow": ["<", "altitude", "17000"],
     "isBelowTransitionAltitude": ["<", "altitude", "&transitionAltitude"],
     "isAboveTransitionAltitude": [">=", "altitude", "&transitionAltitude"],
 
@@ -135,6 +341,63 @@
     "isOutboundTransfer": ["==", "attentionState", "4"],
     "isAssumed": ["==", "attentionState", "3"],
     "notAssumed": ["!=", "attentionState", "3"],
+
+    "isTransit": [
+      "AND",
+      [
+        "$isAssumed",
+        "$isNotDep",
+        "$isNotArr"
+      ]
+    ],
+
+    "isTransitIFR": [
+      "AND",
+      [
+        "$isTransit",
+        "$isIFR"
+      ]
+    ],
+
+    "isAssumedTransitIFR": [
+      "AND",
+      [
+        "$isTransitIFR",
+        "$isAssumed"
+      ]
+    ],
+
+    "isTransitVFR": [
+      "AND",
+      [
+        "$isTransit",
+        "$isVFR"
+      ]
+    ],
+
+    "isAssumedTransitVFR": [
+      "AND",
+      [
+        "$isTransitVFR",
+        "$isAssumed"
+      ]
+    ],
+
+    "isAssumedVFRarrival": [
+      "AND",
+      [
+        "$isVFRandArrival",
+        "$isAssumed"
+      ]
+    ],
+    "isAssumedVFR": [
+      "AND",
+      [
+        "$isVFR",
+        "$isAssumed"
+      ]
+    ],
+
 
     "assumedAndisParisGroupArrival": [
       "AND",
@@ -255,6 +518,61 @@
             ["beginsWith", "suggestedArrRunway", "27"]
           ]
         ]
+      ]
+    ],
+
+    "isNCEsatelliteDeparture": [
+      "OR",
+      [
+        ["==", "origin", "LFMD"],
+        ["==", "origin", "LFTH"],
+        ["==", "origin", "LFTZ"]
+      ]
+    ],
+    "isAssumedNCEsatelliteDeparture": [
+      "AND",
+      [
+        "$isNCEsatelliteDeparture",
+        "$isAssumed"
+      ]
+    ],
+
+    "isNCEsatelliteArrival": [
+      "OR",
+      [
+        "$isLFMDArrival",
+        "$isLFTHArrival",
+        "$isLFMCArrival",
+        ["==", "destination", "LFTZ"]
+      ]
+    ],
+    "isAssumedNCEsatelliteArrival": [
+      "AND",
+      [
+        "$isNCEsatelliteArrival",
+        "$isAssumed"
+      ]
+    ],
+
+    "isLFMDArrival": ["==", "destination", "LFMD"],
+    "isLFMCArrival": ["==", "destination", "LFMC"],
+    "isLFTHArrival": ["==", "destination", "LFTH"],
+    
+    "isLFMNDeparture": ["==", "origin", "LFMN"],
+    "isAssumedLFMNDeparture": [
+      "AND",
+      [
+        "$isLFMNDeparture",
+        "$isAssumed"
+      ]
+    ],
+
+    "isLFMNArrival": ["==", "destination", "LFMN"],
+    "isAssumedLFMNArrival": [
+      "AND",
+      [
+        "$isLFMNArrival",
+        "$isAssumed"
       ]
     ]
   }
