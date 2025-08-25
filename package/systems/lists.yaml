@@ -154,6 +154,19 @@
           1: ":fa-solid fa-square"
         color: [255, 174, 23]
         leftClick: toggleClearanceFlag
+    - name: D
+      width: 16
+      tagItem:
+        itemName: datalinkStatus
+        color:
+          - =pdcRequestedColour
+          - =receivedMessageColour
+          - =rejectedColour
+          - =acknowledgmentColour
+          - =sentMessageColour
+          - =defaultDatalinkColour
+        blinkColor: ["=pdcRequestedTextBlinkColour"]
+        leftClick: pdcMenu
     - name: pfl
       width: 30
       tagItem:
