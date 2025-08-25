@@ -11,7 +11,7 @@
           "fontSize": 12
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "mapping": {
             "0": "",
@@ -43,7 +43,7 @@
           "fontWeight": "bold"
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "mapping": {
             "0": "",
@@ -80,7 +80,7 @@
           "fontSize": 12
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "mapping": {
             "0": "",
@@ -112,7 +112,7 @@
 
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
           "mapping": {
@@ -139,7 +139,7 @@
           "color": "=incorrectSquawkRedColor"
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
           "mapping": {
@@ -198,7 +198,7 @@
           "prefix": ["=assumedPrefix"]
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
           "mapping": {
@@ -328,7 +328,7 @@
           "leftClick": "callsignMenu"
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "mapping": {
             "0": "",
@@ -385,7 +385,7 @@
           "leftClick": "callsignMenu"
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "mapping": {
             "0": "",
@@ -476,7 +476,7 @@
           "leftClick": "callsignMenu"
         },
         {
-          "separatorBefore": false,
+          "separatorBefore": true,
           "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
           "mapping": {
