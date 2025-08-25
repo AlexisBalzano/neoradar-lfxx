@@ -1,0 +1,239 @@
+{
+  "$schema": "https://raw.githubusercontent.com/neoradar-project/schemas/refs/heads/main/systems/targets.schema.json",
+  "groundSymbology": {
+    "default": [
+      {
+        "plotImage": "plots/nce/sol/t0",
+        "rotatePlotWithHeading": true,
+        "historyTrailsSkipSteps": 3,
+        "historyTrailImages": [
+          "plots/nce/sol/t1",
+          "plots/nce/sol/t2",
+          "plots/nce/sol/t3",
+          "plots/nce/sol/t4"
+        ]
+      }
+    ],
+    "departure": [
+      {
+        "plotImage": "plots/nce/sol/t0",
+        "rotatePlotWithHeading": true,
+        "historyTrailsSkipSteps": 3,
+        "historyTrailImages": [
+          "plots/nce/sol/t1",
+          "plots/nce/sol/t2",
+          "plots/nce/sol/t3",
+          "plots/nce/sol/t4"
+        ]
+      }
+    ],
+    "arrival": [
+      {
+        "plotImage": "plots/nce/sol/t0",
+        "rotatePlotWithHeading": true,
+        "historyTrailsSkipSteps": 3,
+        "historyTrailImages": [
+          "plots/nce/sol/t1",
+          "plots/nce/sol/t2",
+          "plots/nce/sol/t3",
+          "plots/nce/sol/t4"
+        ]
+      }
+    ]
+  },
+  "airborneSymbology": [
+    {
+      "description": "VFR Arrivals",
+      "applyWhen": "$isVFRandArrival",
+      "plotImage": "plots/nce/G/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [115, 237, 99],
+      "historyTrailImages": [
+        "plots/nce/G/t4",
+        "plots/nce/G/t4",
+        "plots/nce/G/t4",
+        "plots/nce/G/t5",
+        "plots/nce/G/t5"
+      ]        
+    },
+    {
+      "description": "Transit VFR",
+      "applyWhen": ["OR", ["$isTransitVFR", "$isVFRandDeparture"]],
+      "plotImage": "plots/nce/F/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [212, 229, 136],
+      "historyTrailImages": [
+        "plots/nce/F/t2",
+        "plots/nce/F/t2",
+        "plots/nce/F/t3",
+        "plots/nce/F/t4",
+        "plots/nce/F/t5",
+        "plots/nce/F/t6"
+      ]
+    },
+    {
+      "description": "Nice departure",
+      "applyWhen": "$isLFMNDeparture",
+      "plotImage": "plots/nce/A/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [213, 151, 163],
+      "historyTrailImages": [
+        "plots/nce/A/t2",
+        "plots/nce/A/t2",
+        "plots/nce/A/t3",
+        "plots/nce/A/t4",
+        "plots/nce/A/t5",
+        "plots/nce/A/t6"
+      ]
+    },
+    {
+      "description": "Nice arrival",
+      "applyWhen": "$isLFMNArrival",
+      "plotImage": "plots/nce/B/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [206, 255, 182],
+      "historyTrailImages": [
+        "plots/nce/B/t2",
+        "plots/nce/B/t2",
+        "plots/nce/B/t3",
+        "plots/nce/B/t4",
+        "plots/nce/B/t5",
+        "plots/nce/B/t6"
+      ]
+    },
+    {
+      "description": "Cannes arrival",
+      "applyWhen": "$isLFMDArrival",
+      "plotImage": "plots/nce/ExtraD/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [179, 255, 64],
+      "historyTrailImages": [
+        "plots/nce/D/t2",
+        "plots/nce/D/t2",
+        "plots/nce/D/t3",
+        "plots/nce/D/t4",
+        "plots/nce/D/t5",
+        "plots/nce/D/t6"
+      ]
+    },
+    {
+      "description": "LUC arrival",
+      "applyWhen": "$isLFMCArrival",
+      "plotImage": "plots/nce/ExtraD/t0L",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [179, 255, 64],
+      "historyTrailImages": [
+        "plots/nce/D/t2",
+        "plots/nce/D/t2",
+        "plots/nce/D/t3",
+        "plots/nce/D/t4",
+        "plots/nce/D/t5",
+        "plots/nce/D/t6"
+      ]
+    },
+    {
+      "description": "Toulon arrival",
+      "applyWhen": "$isLFTHArrival",
+      "plotImage": "plots/nce/ExtraD/t0T",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [179, 255, 64],
+      "historyTrailImages": [
+        "plots/nce/D/t2",
+        "plots/nce/D/t2",
+        "plots/nce/D/t3",
+        "plots/nce/D/t4",
+        "plots/nce/D/t5",
+        "plots/nce/D/t6"
+      ]
+    },
+    {
+      "description": "Satellite departure",
+      "applyWhen": "$isNCEsatelliteDeparture",
+      "plotImage": "plots/nce/ExtraC/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [208, 119, 120],
+      "historyTrailImages": [
+        "plots/nce/C/t2",
+        "plots/nce/C/t2",
+        "plots/nce/C/t3",
+        "plots/nce/C/t4",
+        "plots/nce/C/t5",
+        "plots/nce/C/t6"
+      ]
+    },
+    {
+      "description": "Transit IFR",
+      "applyWhen": "$isTransitIFR",
+      "plotImage": "plots/nce/E/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [230, 255, 47],
+      "historyTrailImages": [
+        "plots/nce/E/t2",
+        "plots/nce/E/t2",
+        "plots/nce/E/t3",
+        "plots/nce/E/t4",
+        "plots/nce/E/t5",
+        "plots/nce/E/t6"
+      ]
+    },
+    {
+      "description": "any other departure",
+      "applyWhen": "$isDep",
+      "plotImage": "plots/cdg/D/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [161, 227, 227],
+      "historyTrailImages": [
+        "plots/cdg/D/t2",
+        "plots/cdg/D/t2",
+        "plots/cdg/D/t3",
+        "plots/cdg/D/t4",
+        "plots/cdg/D/t5",
+        "plots/cdg/D/t6"
+      ]
+    },
+    {
+      "description": "any other arrival",
+      "applyWhen": "$isArr",
+      "plotImage": "plots/cdg/A/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [227, 177, 124],
+      "historyTrailImages": [
+        "plots/cdg/A/t2",
+        "plots/cdg/A/t2",
+        "plots/cdg/A/t3",
+        "plots/cdg/A/t4",
+        "plots/cdg/A/t5",
+        "plots/cdg/A/t6"
+      ]
+    },
+    {
+      "description": "catch all for assumed target",
+      "applyToAttentionStates": ["kAssumed"],
+      "plotImage": "plots/cdg/blanc/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [255, 255, 255],
+      "historyTrailImages": [
+        "plots/cdg/blanc/t2",
+        "plots/cdg/blanc/t2",
+        "plots/cdg/blanc/t3",
+        "plots/cdg/blanc/t4",
+        "plots/cdg/blanc/t5",
+        "plots/cdg/blanc/t6"
+      ]
+    },
+    {
+      "description": "Unconcerned air",
+      "plotImage": "plots/cdg/noir/t0",
+      "historyTrailsSkipSteps": 7,
+      "speedVectorColor": [0, 0, 0],
+      "historyTrailImages": [
+        "plots/cdg/noir/t2",
+        "plots/cdg/noir/t2",
+        "plots/cdg/noir/t3",
+        "plots/cdg/noir/t4",
+        "plots/cdg/noir/t5",
+        "plots/cdg/noir/t6"
+      ]
+    }
+  ]
+}
