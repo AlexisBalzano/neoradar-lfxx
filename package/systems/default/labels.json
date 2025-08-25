@@ -11,6 +11,16 @@
           "fontSize": 12
         },
         {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "squawk",
           "prefix": "@"
         }
@@ -31,6 +41,16 @@
           "value": "=penWhenScratchpadNotEmpty",
           "fontSize": 12,
           "fontWeight": "bold"
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "acShortType",
@@ -60,6 +80,16 @@
           "fontSize": 12
         },
         {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "acShortType",
           "placeholder": "ATYP"
         }
@@ -82,6 +112,17 @@
 
         },
         {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "squawk",
           "prefix": "@"
         }
@@ -96,6 +137,17 @@
           "leftClick": "callsignMenu",
           "prefix": ["=assumedPrefix"],
           "color": "=incorrectSquawkRedColor"
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "acShortType",
@@ -144,6 +196,17 @@
           "fontSize": 12,
           "leftClick": "callsignMenu",
           "prefix": ["=assumedPrefix"]
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "acShortType",
@@ -263,6 +326,16 @@
         {
           "itemName": "callsign",
           "leftClick": "callsignMenu"
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         }
       ],
       [
@@ -310,6 +383,16 @@
         {
           "itemName": "callsign",
           "leftClick": "callsignMenu"
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         }
       ],
       [
@@ -391,6 +474,17 @@
         {
           "itemName": "callsign",
           "leftClick": "callsignMenu"
+        },
+        {
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "ownedByID",
