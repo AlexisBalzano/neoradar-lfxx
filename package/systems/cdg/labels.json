@@ -10,6 +10,16 @@
           "fontSize": 12
         },
         {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "squawk",
           "prefix": "@"
         }
@@ -23,6 +33,16 @@
           "fontWeight": "bold",
           "fontSize": 12,
           "color": "=incorrectSquawkRedColor"
+        },
+        {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "text",
@@ -57,6 +77,16 @@
           "fontSize": 12
         },
         {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "acShortType",
           "placeholder": "ATYP"
         }
@@ -78,6 +108,16 @@
 
         },
         {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
+        },
+        {
           "itemName": "squawk",
           "prefix": "@"
         }
@@ -92,6 +132,16 @@
           "leftClick": "callsignMenu",
           "prefix": ["=assumedPrefix"],
           "color": "=incorrectSquawkRedColor"
+        },
+        {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "acShortType",
@@ -140,6 +190,16 @@
           "fontSize": 12,
           "leftClick": "callsignMenu",
           "prefix": ["=assumedPrefix"]
+        },
+        {
+          "separatorBefore": true,
+          "itemName": "voiceType",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "itemName": "acShortType",
