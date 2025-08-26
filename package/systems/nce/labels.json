@@ -374,8 +374,14 @@
           "backgroundColor": ["=assumedEmmergency", "=greenIncomingTransfer", "=greenOutgoingTransfer", "=assumedAndcdgNord", "=assumedAndcdgSud", "=assumedAndcdgBourget", "=assumedAndcdgOrange", "=assumedAndcdgDepBleu", "=assumedAndcdgDepSat"]
         },
         {
-          "itemName": "text",
-          "value": ["=textPilotIndicator"],
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
           "color": [255, 220, 3]
         },
         {
@@ -467,8 +473,14 @@
           "backgroundColor": ["=assumedEmmergency", "=assumedVFRandArrival", "=assumedTransitVFR", "=assumedNCEDeparture", "=assumedNCEArrival", "=assumedSATDeparture", "=assumedSATArrival", "=assumedTransitIFR"]
         },
         {
-          "itemName": "text",
-          "value": ["=textPilotIndicator"],
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
           "color": [255, 220, 3]
         },
         {
@@ -565,9 +577,14 @@
           "color": "=cdgWhiteIfInStateOfInterest"
         },
         {
-          "itemName": "text",
-          "value": ["=textPilotIndicator"],
+          "separatorBefore": false,
+          "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
           "color": [255, 220, 3]
         },
         {

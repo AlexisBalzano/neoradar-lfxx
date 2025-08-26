@@ -457,9 +457,15 @@
           "backgroundColor": ["=assumedEmmergency", "=assumedVFRandArrival", "=assumedTransitVFR", "=assumedAndDeparture", "=assumedAndArrival", "=assumedTransitIFR"]
         },
         {
-          "itemName": "text",
-          "value": "=penWhenScratchpadNotEmpty",
-          "color": "=blueColorScratchpadNotEmpty"
+          "separatorBefore": false,
+          "itemName": "voiceType",
+          "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
+          "color": [255, 220, 3]
         },
         {
           "separatorBefore": false,
@@ -557,9 +563,14 @@
           "color": "=cdgWhiteIfInStateOfInterest"
         },
         {
-          "itemName": "text",
-          "value": ["=textPilotIndicator"],
+          "separatorBefore": false,
+          "itemName": "voiceType",
           "leftClick": "voiceTypeMenu",
+          "mapping": {
+            "0": "",
+            "1": "/r",
+            "2": "/t"
+          },
           "color": [255, 220, 3]
         },
         {
