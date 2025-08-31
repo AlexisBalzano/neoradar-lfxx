@@ -10,6 +10,7 @@
           [0, 219, 219],
           [0, 183, 183]
         ],
+        "historyTrailsSkipSteps": 3,
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
@@ -26,6 +27,7 @@
           [0, 219, 219],
           [0, 183, 183]
         ],
+        "historyTrailsSkipSteps": 3,
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
@@ -42,6 +44,7 @@
           [0, 219, 219],
           [0, 183, 183]
         ],
+        "historyTrailsSkipSteps": 3,
         "historyTrailImages": [
           "plots/cdg/blanc/t5",
           "plots/cdg/blanc/t5",
