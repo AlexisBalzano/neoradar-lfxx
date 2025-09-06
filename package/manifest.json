@@ -17,11 +17,6 @@
       "source": "region"
     },
     {
-      "name": "maps",
-      "type": "geojson",
-      "source": "maps"
-    },
-    {
       "name": "artcc",
       "type": "geojson",
       "source": "artcc",
