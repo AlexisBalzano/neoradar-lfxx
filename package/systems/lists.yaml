@@ -26,6 +26,24 @@
         mapping:
           "0": "---"
 
+- name: FREQUENCIES
+  type: frequency
+  style:
+    showHeaders: false
+  columns:
+    - name: CALLSIGN
+      width: 90
+      tagItem:
+        itemName: frequencyCallsign
+    - name: FREQUENCY
+      width: 60
+      tagItem:
+        itemName: frequencyMHz
+    - name: LASTCALLSIGN
+      width: 80
+      tagItem:
+        itemName: frequencyLastReceivedCallsigns
+
 # METAR list with tagItem approach instead of metarField
 - name: WEATHER
   type: metar
