@@ -32,11 +32,6 @@
           "itemName": "squawk",
           "prefix": "@"
         }
-      ],
-      [
-        {
-          "itemName": "plugin:NeoRampAgent:TAG_STAND"
-        }
       ]
     ],
     "departure": [
@@ -89,11 +84,6 @@
           "placeholder": "SID",
           "leftClick": "sidMenu",
           "color": [255, 255, 255]
-        }
-      ],
-      [
-        {
-          "itemName": "plugin:NeoRampAgent:TAG_STAND"
         }
       ]
     ],
@@ -225,6 +215,14 @@
       ],
       [
         {
+          "itemName": "plugin:NeoRampAgent:TAG_STAND"
+        },
+        {
+          "itemName": "plugin:NeoRampAgent:TAG_REMARK"
+        }
+      ],
+      [
+        {
           "itemName": "groundStatus",
           "leftClick": "groundStatusMenu",
           "mapping": {
@@ -234,9 +232,6 @@
             "3": "TAXI",
             "4": "DEPA"
           }
-        },
-        {
-          "itemName": "plugin:NeoRampAgent:TAG_STAND"
         }
       ]
     ],
@@ -273,7 +268,8 @@
           "leftClick": "fpDialog"
         },
         {
-          "itemName": "plugin:NeoRampAgent:TAG_STAND"
+          "itemName": "plugin:NeoRampAgent:TAG_STAND",
+          "leftClick": "plugin:NeoRampAgent:ACTION_StandMenu"
         }
       ]
     ],
